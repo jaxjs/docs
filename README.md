@@ -1,2 +1,2 @@
-# docs
-Jax JS LIbrary Documentation
+Jax JS Library Documentation
+============================
