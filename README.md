@@ -1,2 +1,0 @@
-Jax JS Library Documentation
-============================
