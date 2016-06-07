@@ -14,5 +14,3 @@ copyright = u'2016 Nick Sagona, III'
 version = '4'
 release = '4.0.0'
 
-lexers['javascript'] = JsLexer(startinline=True)
-
