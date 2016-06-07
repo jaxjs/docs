@@ -1,5 +1,5 @@
-Popcorn PHP Micro-Framework
-===========================
+Jax JavaScript Library
+======================
 
 Welcome to the Jax JavaScript Library documentation. Here, you should find what you need
 to get familiar with the JavaScript library and start writing code with it. Follow the
