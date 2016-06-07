@@ -7,8 +7,8 @@ Introduction
 The Jax JavaScript Library is an alternative lightweight JavaScript library that works
 along the same standards and practices of many other JavaScript libraries out there.
 
-About the Framework
--------------------
+About the Library
+-----------------
 
 Jax is an open source and is available on `Github`_ or as a `stand-alone download`_ from
 the website.
