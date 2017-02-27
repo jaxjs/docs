@@ -62,6 +62,23 @@ Shorthand Methods
 Using the built-in content type auto-detect feature, you can easily get a JSON object from a URL that
 sends JSON content:
 
+.. code-block:: javascript
+
     var json = jax.get('/test.json');
 
 
+HTTP Status Methods
+-------------------
+
+You can check a URL and get back status information on it by using the HTTP status methods:
+
+* ``getStatus(url)``
+* ``isSuccess(url)``
+* ``isRedirect(url)``
+* ``isError(url)``
+
+.. code-block:: javascript
+
+    if (jax.http.getStatus('http://www.mydomain.com/') == 200) {
+        console.log('The URL is OK');
+    }
