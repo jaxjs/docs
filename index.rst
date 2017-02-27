@@ -9,6 +9,4 @@ links below to get started.
     :maxdepth: 2
 
     overview
-    getting_started/index
     user_guide/index
-    reference/index

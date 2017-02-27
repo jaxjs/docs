@@ -8,13 +8,7 @@ that utilize a set of the more common components from the library.
 .. toctree::
 :maxdepth: 1
 
-    css
-    effects
-    events
     ajax
-    filter
-    append
     browser
-    cookies
-    storage
+    cookie
 
