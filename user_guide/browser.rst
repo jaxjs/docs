@@ -1,8 +1,8 @@
 Browser
 =======
 
-The Jax JavaScript Library a ``browser`` object that helps to get browser-specific
-information from the user client.
+The Jax JavaScript Library has a ``browser`` object that helps to get browser-specific
+information from the user client and handle specific browser-related functions.
 
 Open a New Window
 -----------------
@@ -20,7 +20,6 @@ are:
 * ``tool``
 * ``x``
 * ``y``
-
 
 .. code-block:: javascript
 

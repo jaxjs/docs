@@ -11,4 +11,5 @@ that utilize a set of the more common components from the library.
     ajax
     browser
     cookie
+    storage
 
