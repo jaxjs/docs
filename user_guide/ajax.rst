@@ -45,9 +45,23 @@ Here's a basic GET call to a URL:
 
 .. code-block:: javascript
 
-    var text = jax.ajax('http://www.mydomain.com/text');
-
+    var text = jax.ajax('/test.txt', {
+        "status" : {
+            "200" : function(response) {
+                console.log(response.text);
+            }
+        }
+    });
 
 Shorthand Methods
 -----------------
+
+* ``jax.get()``
+* ``jax.post()``
+
+Using the built-in content type auto-detect feature, you can easily get a JSON object from a URL that
+sends JSON content:
+
+    var json = jax.get('/test.json');
+
 
