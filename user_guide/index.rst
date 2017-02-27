@@ -6,7 +6,7 @@ use the Jax JavaScript Library. The topics covered here are some of the more com
 that utilize a set of the more common components from the library.
 
 .. toctree::
-:maxdepth: 1
+    :maxdepth: 1
 
     ajax
     browser
