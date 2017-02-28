@@ -1,5 +1,5 @@
-Jax JavaScript Library
-======================
+Jax JavaScript HTTP Library
+===========================
 
 Welcome to the Jax JavaScript HTTP Library documentation. Here, you should find what you need
 to get familiar with the library and start writing code with it. Follow the links below to get started.
