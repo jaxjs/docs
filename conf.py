@@ -8,9 +8,9 @@ extensions = []
 master_doc = 'index'
 highlight_language = 'javascript'
 
-project = u'Jax JavaScript Library'
-copyright = u'2016 Nick Sagona, III'
+project = u'Jax JavaScript HTTP Library'
+copyright = u'2017 Nick Sagona, III'
 
-version = '4'
-release = '4.0.0'
+version = '5'
+release = '5.5.0'
 
