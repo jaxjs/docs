@@ -2,8 +2,14 @@ AJAX
 ====
 
 The Jax JavaScript Library has its own built-in component to handle AJAX requests
-and responses. When performing an AJAX request, you will pass the URL just an object
-that accepts the the following properties:
+and responses. The basic API is:
+
+* ``jax.ajax(url, options)``
+* ``jax.get(url, options)``
+* ``jax.post(url, options)``
+
+The ``get()`` and ``post()`` methods above are simply shorthand methods for those
+request methods. The options object can accept the the following properties:
 
 * ``method``
 
@@ -25,13 +31,13 @@ that accepts the the following properties:
 
   - An object of status-based function handlers that will trigger based on the status of the return response
 
-* ``fields``
-
-  - Boolean flag to manage CSV field names
-
 * ``type``
 
   - Force a specific content type from the response (will auto-detect otherwise)
+
+* ``fields``
+
+  - Boolean flag to manage and set CSV field names
 
 * ``delim``
 
@@ -53,13 +59,25 @@ Here's a basic GET call to a URL:
         }
     });
 
-Shorthand Methods
------------------
+If you wanted to control what happened on an error, you could set the status to:
 
-* ``jax.get()``
-* ``jax.post()``
+.. code-block:: javascript
 
-Using the built-in content type auto-detect feature, you can easily get a JSON object from a URL that
+    var text = jax.ajax('/test.txt', {
+        "status" : {
+            "200" : function(response) {
+                console.log(response.text);
+            },
+            "404" : function(response) {
+                console.log('Whoops, something bad happened.');
+            }
+        }
+    });
+
+Auto-Detect Content
+-------------------
+
+Using the built-in auto-detect content feature, you can easily get a JSON object from a URL that
 sends JSON content:
 
 .. code-block:: javascript
@@ -72,10 +90,10 @@ HTTP Status Methods
 
 You can check a URL and get back status information on it by using the HTTP status methods:
 
-* ``getStatus(url)``
-* ``isSuccess(url)``
-* ``isRedirect(url)``
-* ``isError(url)``
+* ``jax.http.getStatus(url)``
+* ``jax.http.isSuccess(url)``
+* ``jax.http.isRedirect(url)``
+* ``jax.http.isError(url)``
 
 .. code-block:: javascript
 
