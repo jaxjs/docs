@@ -87,13 +87,26 @@ If you wanted to control what happened on an error, you could set the status to:
 Auto-Detect Content
 -------------------
 
-Using the built-in auto-detect content feature, you can easily get a JSON object from a URL that
-sends JSON content:
+Using the built-in auto-detect content feature, you can easily get a data object parsed from a URL
+with a specific content-type:
+
+**JSON content:**
 
 .. code-block:: javascript
 
     var json = jax.get('/test.json');
 
+**CSV content:**
+
+.. code-block:: javascript
+
+    var csv = jax.get('/test.csv', {"fields" : true});
+
+**XML content:**
+
+.. code-block:: javascript
+
+    var xml = jax.get('/test.xml');
 
 Check HTTP Status Check
 -----------------------
