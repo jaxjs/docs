@@ -8,7 +8,7 @@ that utilize a set of the more common components from the library.
 .. toctree::
     :maxdepth: 1
 
-    ajax
+    http
     browser
     cookie
     storage

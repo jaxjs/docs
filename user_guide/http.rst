@@ -1,19 +1,37 @@
-AJAX
+HTTP
 ====
 
-The Jax JavaScript Library has its own built-in component to handle AJAX requests
-and responses. The basic API is:
+The Jax JavaScript Library has its own built-in component to handle HTTP requests
+and responses. The main ``send()`` method is:
 
-* ``jax.ajax(url, options)``
-* ``jax.get(url, options)``
-* ``jax.post(url, options)``
+* ``jax.http.send(url, options)``
 
-The ``get()`` and ``post()`` methods above are simply shorthand methods for those
-request methods. The options object can accept the the following properties:
+And the alias methods to send specific request methods are respectively:
+
+* ``jax.http.get(url, options)``
+* ``jax.http.head(url, options)``
+* ``jax.http.options(url, options)``
+* ``jax.http.post(url, options)``
+* ``jax.http.put(url, options)``
+* ``jax.http.delete(url, options)``
+
+The options object can accept the the following properties:
 
 * ``method``
 
   - The method to use, GET, POST, etc. (defaults to GET)
+
+* ``headers``
+
+  - Additional request headers to send
+
+* ``username``
+
+  - A username, if required
+
+* ``password``
+
+  - A password, if required
 
 * ``async``
 
@@ -23,29 +41,21 @@ request methods. The options object can accept the the following properties:
 
   - Array or object of values to send over in the request
 
-* ``headers``
+* ``type``
 
-  - Additional request headers to send
+  - Force a specific content-type from the response (will auto-detect otherwise)
 
 * ``status``
 
   - An object of status-based function handlers that will trigger based on the status of the return response
 
-* ``type``
-
-  - Force a specific content type from the response (will auto-detect otherwise)
-
-* ``fields``
-
-  - Boolean flag to manage and set CSV field names
-
-* ``delim``
-
-  - Force a specific delimiter for CSV data
-
 * ``trace``
 
   - Push the response into a trace/debug function
+
+* ``fields``
+
+  - Boolean flag to manage and set CSV field names from the first row of data
 
 Here's a basic GET call to a URL:
 
@@ -85,10 +95,10 @@ sends JSON content:
     var json = jax.get('/test.json');
 
 
-HTTP Status Methods
--------------------
+Check HTTP Status Check
+-----------------------
 
-You can check a URL and get back status information on it by using the HTTP status methods:
+You can check a URL and get back only status information on it by using the HTTP status methods:
 
 * ``jax.http.getStatus(url)``
 * ``jax.http.isSuccess(url)``
