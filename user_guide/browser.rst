@@ -1,7 +1,7 @@
 Browser
 =======
 
-The Jax JavaScript Library has a ``browser`` object that helps to get browser-specific
+The Jax JavaScript HTTP Library has a ``browser`` object that helps to get browser-specific
 information from the user client and handle specific browser-related functions.
 
 Open a New Window
@@ -40,4 +40,3 @@ the ``mobile`` URL property for a all-inclusive mobile URL, or you can set a dev
         "android" : 'http://www.mydomain.com/android',
     }
     jax.browser.route(options);
-

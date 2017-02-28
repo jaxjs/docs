@@ -1,7 +1,7 @@
 HTTP
 ====
 
-The Jax JavaScript Library has its own built-in component to handle HTTP requests
+The Jax JavaScript HTTP Library has its own built-in component to handle HTTP requests
 and responses. The main ``send()`` method is:
 
 * ``jax.http.send(url, options)``

@@ -1,7 +1,7 @@
 Storage
 =======
 
-The Jax JavaScript Library has a ``storage`` object that helps to manage local storage
+The Jax JavaScript HTTP Library has a ``storage`` object that helps to manage local storage
 values for the user client.
 
 Storing

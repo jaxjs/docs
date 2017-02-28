@@ -3,9 +3,8 @@ Overview
 
 **Introduction**
 
-The Jax JavaScript Library is an alternative lightweight JavaScript library that works
-along the same standards and practices of many other JavaScript libraries out there.
-It can be installed next to and work alongside other JavaScript librarires, such as jQuery.
+The Jax JavaScript HTTP Library is an alternative lightweight JavaScript HTTP library.
+It can be installed next to and work alongside other JavaScript libraries, such as jQuery.
 
 **About the Library**
 

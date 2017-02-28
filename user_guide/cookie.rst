@@ -1,7 +1,7 @@
 Cookie
 ======
 
-The Jax JavaScript Library has a ``cookie`` object that helps to manage cookie values
+The Jax JavaScript HTTP Library has a ``cookie`` object that helps to manage cookie values
 for the user client.
 
 Storing
