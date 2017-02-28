@@ -49,6 +49,10 @@ The options object can accept the the following properties:
 
   - An object of status-based function handlers that will trigger based on the status of the return response
 
+* ``progress``
+
+  - An function to trigger on the download (GET) or upload (POST) progress of a request
+
 * ``trace``
 
   - Push the response into a trace/debug function
@@ -113,7 +117,7 @@ Check HTTP Status Check
 
 You can check a URL and get back only status information on it by using the HTTP status methods:
 
-* ``jax.http.getStatus(url)``
+* ``jax.http.status(url)``
 * ``jax.http.isSuccess(url)``
 * ``jax.http.isRedirect(url)``
 * ``jax.http.isError(url)``
